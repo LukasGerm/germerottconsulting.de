@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { CookieBanner } from "@/components/logic/cookie-banner";
+import { ConsentProvider } from "@/components/logic/providers/consent-provider";
+import { GoogleTagManager } from "@/components/logic/google-tag-manager";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +30,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ConsentProvider>
+          {children}
+          <CookieBanner />
+          <GoogleTagManager />
+        </ConsentProvider>
       </body>
     </html>
   );
