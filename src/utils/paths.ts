@@ -5,7 +5,7 @@ interface Path {
   };
 }
 
-export const paths: Path = {
+export const headerPaths: Path = {
   home: {
     path: "/",
     label: "Startseite",
@@ -18,6 +18,9 @@ export const paths: Path = {
     path: "/ueber-mich",
     label: "Über Mich",
   },
+};
+
+export const footerPaths: Path = {
   imprint: {
     path: "/impressum",
     label: "Impressum",
@@ -27,3 +30,5 @@ export const paths: Path = {
     label: "Datenschutz",
   },
 };
+
+export const paths: Path = { ...headerPaths, ...footerPaths };

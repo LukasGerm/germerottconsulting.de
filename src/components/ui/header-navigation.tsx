@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { paths } from "@/utils/paths";
+import { headerPaths } from "@/utils/paths";
 import { usePathname } from "next/navigation";
 
 export const HeaderNavigation = () => {
@@ -8,8 +8,8 @@ export const HeaderNavigation = () => {
 
   return (
     <div className="gap-4 uppercase text-lg font-semibold hidden md:flex">
-      {Object.keys(paths).map((path) => {
-        const { path: href, label } = paths[path];
+      {Object.keys(headerPaths).map((path) => {
+        const { path: href, label } = headerPaths[path];
         return (
           <Link
             key={path}

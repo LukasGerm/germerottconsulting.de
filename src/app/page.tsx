@@ -67,7 +67,7 @@ const services: USP[] = [
 
 export default function Home() {
   return (
-    <main className="flex flex-col row-start-2 items-center">
+    <main className="flex flex-col items-center">
       <HeroSection>
         <Title variant="h1">
           Leistungssprung für <span className="text-primary">Ihre Webapp:</span>{" "}

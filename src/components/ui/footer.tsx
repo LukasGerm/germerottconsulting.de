@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import styles from "./footer.module.css";
-import { paths } from "@/utils/paths";
+import { footerPaths, headerPaths, paths } from "@/utils/paths";
 import Link from "next/link";
 import LogoWhite from "../../assets/logo_white.svg";
 import Image from "next/image";
@@ -19,9 +19,14 @@ export const Footer = () => {
             <hr className="w-5 h-2 bg-primary mt-2 mb-2 border-t-2" />
           </div>
           <div className="flex flex-col gap-2 text-lg">
-            <Link href={paths.home.path}>Startseite</Link>
-            <Link href={paths.about.path}>Über uns</Link>
-            <Link href={paths.services.path}>Unsere Services</Link>
+            {Object.keys(headerPaths).map((key) => {
+              const { path, label } = headerPaths[key];
+              return (
+                <Link key={key} href={path}>
+                  {label}
+                </Link>
+              );
+            })}
           </div>
         </div>
         <div className="flex-1">
@@ -29,8 +34,14 @@ export const Footer = () => {
             <h4>Rechtliches</h4>
             <hr className="w-5 h-2 bg-primary mt-2 mb-4 border-t-2" />
             <div className="flex flex-col gap-2 text-lg">
-              <Link href={paths.imprint.path}>Impressum</Link>
-              <Link href={paths.privacy.path}>Datenschutz</Link>
+              {Object.keys(footerPaths).map((key) => {
+                const { path, label } = footerPaths[key];
+                return (
+                  <Link key={key} href={path}>
+                    {label}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>
