@@ -10,10 +10,12 @@ import { Footer } from "@/components/ui/footer";
 const poppins = Poppins({
   variable: "--font-primary",
   weight: "400",
+  subsets: ["latin"],
 });
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-secondary",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
