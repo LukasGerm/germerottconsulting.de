@@ -1,0 +1,24 @@
+.entry-section {
+  background: url("./assets/picture1.avif") center/cover no-repeat;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+}
+
+.linear-gradient {
+  background: linear-gradient(90.2deg, #1e3a5f 0.13%, #142843 99.79%);
+}
+
+.angled-section {
+  position: relative;
+  margin-top: -3.5rem;
+  margin-bottom: -3.5rem;
+  z-index: 10;
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+}
+
+.computer-picture {
+  background: url("./assets/picture2.avif") center/cover no-repeat;
+  height: 50vh;
+  width: 100%;
+  filter: grayscale(100%);
+}

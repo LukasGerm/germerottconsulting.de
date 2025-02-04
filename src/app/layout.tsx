@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
 import { CookieBanner } from "@/components/logic/cookie-banner";
 import { ConsentProvider } from "@/components/logic/providers/consent-provider";
 import { GoogleTagManager } from "@/components/logic/google-tag-manager";
+import { Header } from "@/components/ui/header";
+import { Footer } from "@/components/ui/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const poppins = Poppins({
+  variable: "--font-primary",
+  weight: "400",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const playfairDisplay = Playfair_Display({
+  variable: "--font-secondary",
 });
 
 export const metadata: Metadata = {
@@ -28,13 +29,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${playfairDisplay.variable} ${poppins.variable} antialiased text-lg`}
       >
+        <Header />
         <ConsentProvider>
           {children}
           <CookieBanner />
           <GoogleTagManager />
         </ConsentProvider>
+        <Footer />
       </body>
     </html>
   );
