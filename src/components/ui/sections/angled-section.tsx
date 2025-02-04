@@ -16,7 +16,7 @@ export const AngledSection = (
       className={cn(
         styles["angled-section"],
         "flex justify-center items-center w-full",
-        variant === "gradient" ? styles["linear-gradient"] : ""
+        variant === "gradient" ? styles["linear-gradient"] : "bg-card"
       )}
     >
       <div className="flex flex-col gap-8 text-center py-32 max-w-screen-lg px-8">
@@ -30,7 +30,7 @@ export const AngledSection = (
           <hr
             className={cn(
               "w-24 h-2  mx-auto mt-4 mb-4 border-t-2",
-              variant === "gradient" ? "bg-primary" : "bg-white border-primary"
+              variant === "gradient" ? "bg-primary" : "bg-card border-primary"
             )}
           />
         </div>
