@@ -131,11 +131,14 @@ export default function Home() {
             <hr className="w-24 h-2 bg-primary mx-auto mt-4 mb-4 border-t-2" />
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
+            Ich bin Lukas Germerott, ein leidenschaftlicher Frontend Performance
+            Experte. Nach Jahren als Frontend-Entwickler spezialisiere ich mich
+            auf Speed-Optimierung, gründliche Audits und nachhaltige
+            Verbesserungen. Mit modernen Tools und stetiger Weiterbildung
+            verbessere ich digitale Produkte, steigere Conversion und
+            Nutzerzufriedenheit und teile mein Wissen in Workshops. Mein Fokus
+            liegt auf messbaren Ergebnissen und kundenspezifischen
+            Lösungsansätzen.
           </p>
           <div>
             <Button asChild>
