@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { Title } from "./title";
 
 export interface USP {
   title: string;
@@ -18,7 +19,7 @@ export const HomeUsp = (props: HomeUspProps) => {
   return (
     <div className={cn("flex flex-col items-center gap-4 flex-1", color)}>
       <Image src={usp.icon} alt={usp.title} />
-      <h3 className="text-2xl font-bold">{usp.title}</h3>
+      <Title variant="h3">{usp.title}</Title>
       <p>{usp.description}</p>
     </div>
   );

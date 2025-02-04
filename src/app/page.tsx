@@ -14,6 +14,8 @@ import { HomeUsp, USP } from "@/components/ui/home-usp";
 import { paths } from "@/utils/paths";
 import Image from "next/image";
 import { CalendlyWidget } from "@/components/logic/calendly-widget";
+import { HeroSection } from "@/components/ui/hero-section";
+import { Title } from "@/components/ui/title";
 
 const usps: USP[] = [
   {
@@ -65,32 +67,25 @@ const services: USP[] = [
 
 export default function Home() {
   return (
-    <main className="flex flex-col row-start-2 items-center sm:items-start">
-      <section
-        className={cn(
-          "flex justify-center items-center w-full z-0",
-          styles["entry-section"]
-        )}
-      >
-        <div className="flex flex-col gap-8 text-center py-56 max-w-screen-lg px-8 z-10">
-          <h1 className="font-semibold text-6xl">
-            Leistungssprung für{" "}
-            <span className="text-primary">Ihre Webapp:</span>{" "}
-            Frontend-Performance & Speed-Optimierung
-          </h1>
-          <p>
-            Wir optimieren Ihre Frontend-Performance, reduziere Ladezeiten und
-            sorge für eine reibungslose Nutzererfahrung. Durch gezielte
-            Optimierungen steigeren wir Ihre Conversion Rate und macheb Ihre
-            Website schneller, effizienter und erfolgreicher.
-          </p>
-          <div>
-            <Button asChild>
-              <Link href="#calendly">Kostenloses Erstgespräch vereinbaren</Link>
-            </Button>
-          </div>
+    <main className="flex flex-col row-start-2 items-center">
+      <HeroSection>
+        <Title variant="h1">
+          Leistungssprung für <span className="text-primary">Ihre Webapp:</span>{" "}
+          Frontend-Performance & Speed-Optimierung
+        </Title>
+        <p>
+          Wir optimieren Ihre Frontend-Performance, reduziere Ladezeiten und
+          sorge für eine reibungslose Nutzererfahrung. Durch gezielte
+          Optimierungen steigeren wir Ihre Conversion Rate und macheb Ihre
+          Website schneller, effizienter und erfolgreicher.
+        </p>
+        <div>
+          <Button asChild>
+            <Link href="#calendly">Kostenloses Erstgespräch vereinbaren</Link>
+          </Button>
         </div>
-      </section>
+      </HeroSection>
+
       <section
         className={cn(
           styles["angled-section"],
@@ -100,9 +95,9 @@ export default function Home() {
       >
         <div className="flex flex-col gap-8 text-center py-32 max-w-screen-lg px-8">
           <div>
-            <h2 className="font-bold text-4xl text-white">
+            <Title variant="h2" className="text-white">
               Blitzschnell, leistungsstark, konversionsstark!
-            </h2>
+            </Title>
             <hr className="w-24 h-2 bg-primary mx-auto mt-4 mb-4 border-t-2" />
           </div>
           <div className="flex justify-between gap-8 flex-col md:flex-row">
@@ -126,7 +121,7 @@ export default function Home() {
       >
         <div className="flex flex-col gap-8 text-center py-32 max-w-screen-lg px-8">
           <div>
-            <h2 className="font-bold text-4xl">Unser Angebot für dich</h2>
+            <Title variant="h2">Unser Angebot für dich</Title>
             <hr className="w-24 h-2 bg-primary mx-auto mt-4 mb-4 border-t-2" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -151,7 +146,7 @@ export default function Home() {
             className="rounded-full grayscale"
           />
           <div>
-            <h2 className="font-bold text-4xl">Hey, ich bin Lukas</h2>
+            <Title variant="h2">Hey, ich bin Lukas</Title>
             <hr className="w-24 h-2 bg-primary mx-auto mt-4 mb-4 border-t-2" />
           </div>
           <p>
@@ -163,7 +158,7 @@ export default function Home() {
           </p>
           <div>
             <Button asChild>
-              <Link href={paths.about}>Erfahren Sie mehr über mich</Link>
+              <Link href={paths.about.path}>Erfahren Sie mehr über mich</Link>
             </Button>
           </div>
         </div>

@@ -19,9 +19,9 @@ export const Footer = () => {
             <hr className="w-5 h-2 bg-primary mt-2 mb-2 border-t-2" />
           </div>
           <div className="flex flex-col gap-2 text-lg">
-            <Link href={paths.home}>Startseite</Link>
-            <Link href={paths.about}>Über uns</Link>
-            <Link href={paths.services}>Unsere Services</Link>
+            <Link href={paths.home.path}>Startseite</Link>
+            <Link href={paths.about.path}>Über uns</Link>
+            <Link href={paths.services.path}>Unsere Services</Link>
           </div>
         </div>
         <div className="flex-1">
@@ -29,8 +29,8 @@ export const Footer = () => {
             <h4>Rechtliches</h4>
             <hr className="w-5 h-2 bg-primary mt-2 mb-4 border-t-2" />
             <div className="flex flex-col gap-2 text-lg">
-              <Link href={paths.imprint}>Impressum</Link>
-              <Link href={paths.privacy}>Datenschutz</Link>
+              <Link href={paths.imprint.path}>Impressum</Link>
+              <Link href={paths.privacy.path}>Datenschutz</Link>
             </div>
           </div>
         </div>

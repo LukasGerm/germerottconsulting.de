@@ -6,6 +6,7 @@ import { ConsentProvider } from "@/components/logic/providers/consent-provider";
 import { GoogleTagManager } from "@/components/logic/google-tag-manager";
 import { Header } from "@/components/ui/header";
 import { Footer } from "@/components/ui/footer";
+import { MobileNavigation } from "@/components/ui/mobile-navigation";
 
 const poppins = Poppins({
   variable: "--font-primary",
@@ -31,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfairDisplay.variable} ${poppins.variable} antialiased text-lg`}
+        className={`${playfairDisplay.variable} ${poppins.variable} antialiased text-base md:text-lg`}
       >
         <Header />
         <ConsentProvider>
@@ -40,6 +41,7 @@ export default function RootLayout({
           <GoogleTagManager />
         </ConsentProvider>
         <Footer />
+        <MobileNavigation />
       </body>
     </html>
   );
