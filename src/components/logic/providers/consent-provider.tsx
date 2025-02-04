@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext } from "react";
+import React, { createContext, useEffect } from "react";
 import Cookies from "js-cookie";
 
 interface ConsentContextType {
@@ -9,7 +9,7 @@ interface ConsentContextType {
 }
 
 const ConsentContext = createContext<ConsentContextType>(
-  {} as ConsentContextType,
+  {} as ConsentContextType
 );
 
 export const CONSENT_COOKIE_NAME = "consent_given";
@@ -17,9 +17,11 @@ export const CONSENT_COOKIE_NAME = "consent_given";
 export const ConsentProvider = ({
   children,
 }: Readonly<{ children: React.ReactNode }>) => {
-  const [consent, setConsent] = React.useState(
-    Cookies.get(CONSENT_COOKIE_NAME) === "true",
-  );
+  const [consent, setConsent] = React.useState(false);
+
+  useEffect(() => {
+    setConsent(Cookies.get(CONSENT_COOKIE_NAME) === "true");
+  }, []);
 
   const handleConsent = (newConsent: boolean) => {
     Cookies.set(CONSENT_COOKIE_NAME, newConsent.toString());
