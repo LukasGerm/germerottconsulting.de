@@ -61,10 +61,10 @@ export async function GET(request: Request) {
             }}
           >
             <img
-              src={url.origin + "/profile.jpeg"}
+              src={"https://germerottconsulting.de/profile.jpeg"}
               alt="Germerott Consulting"
-              height={60}
-              width={60}
+              height={256}
+              width={256}
               style={{
                 objectFit: "cover",
                 borderRadius: "100%",
