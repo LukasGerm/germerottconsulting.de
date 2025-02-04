@@ -5,14 +5,3 @@
   z-index: 10;
   clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 }
-
-.calendly-widget {
-  width: 100%;
-  height: 1000px;
-}
-
-@media screen and (max-width: 1000px) {
-  .calendly-widget {
-    height: 1100px;
-  }
-}
