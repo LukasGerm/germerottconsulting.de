@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import styles from "./footer.module.css";
-import { footerPaths, headerPaths, paths } from "@/utils/paths";
+import { footerPaths, headerPaths } from "@/utils/paths";
 import Link from "next/link";
 import LogoWhite from "../../assets/logo_white.svg";
 import Image from "next/image";

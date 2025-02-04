@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import styles from "./styles.module.css";
-import { cn } from "@/lib/utils";
+
 import RocketIcon from "./assets/icons/rocket.svg";
 import SmileIcon from "./assets/icons/smile.svg";
 import ClipboardIcon from "./assets/icons/clipboard.svg";
@@ -14,8 +13,10 @@ import { HomeUsp, USP } from "@/components/ui/home-usp";
 import { paths } from "@/utils/paths";
 import Image from "next/image";
 import { CalendlyWidget } from "@/components/logic/calendly-widget";
-import { HeroSection } from "@/components/ui/hero-section";
+import { HeroSection } from "@/components/ui/sections/hero-section";
 import { Title } from "@/components/ui/title";
+import { ComputerPictureSection } from "@/components/ui/sections/computer-picture-section";
+import { AngledSection } from "@/components/ui/sections/angled-section";
 
 const usps: USP[] = [
   {
@@ -86,56 +87,36 @@ export default function Home() {
         </div>
       </HeroSection>
 
-      <section
-        className={cn(
-          styles["angled-section"],
-          "flex justify-center items-center w-full",
-          styles["linear-gradient"]
-        )}
+      <AngledSection
+        title="Blitzschnell, leistungsstark, konversionsstark!"
+        variant="gradient"
       >
-        <div className="flex flex-col gap-8 text-center py-32 max-w-screen-lg px-8">
-          <div>
-            <Title variant="h2" className="text-white">
-              Blitzschnell, leistungsstark, konversionsstark!
-            </Title>
-            <hr className="w-24 h-2 bg-primary mx-auto mt-4 mb-4 border-t-2" />
-          </div>
-          <div className="flex justify-between gap-8 flex-col md:flex-row">
-            {usps.map((usp) => (
-              <HomeUsp key={usp.title} usp={usp} color="text-white" />
-            ))}
-          </div>
-          <div>
-            <Button asChild variant="outline">
-              <Link href="#calendly">Jetzt Webapp beschleunigen</Link>
-            </Button>
-          </div>
+        <div className="flex justify-between gap-8 flex-col md:flex-row">
+          {usps.map((usp) => (
+            <HomeUsp key={usp.title} usp={usp} color="text-white" />
+          ))}
         </div>
-      </section>
-      <section className={styles["computer-picture"]} />
-      <section
-        className={cn(
-          styles["angled-section"],
-          "bg-card w-full flex justify-center items-center"
-        )}
-      >
-        <div className="flex flex-col gap-8 text-center py-32 max-w-screen-lg px-8">
-          <div>
-            <Title variant="h2">Unser Angebot für dich</Title>
-            <hr className="w-24 h-2 bg-primary mx-auto mt-4 mb-4 border-t-2" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {services.map((service) => (
-              <HomeUsp key={service.title} usp={service} color="text-black" />
-            ))}
-          </div>
-          <div>
-            <Button asChild>
-              <Link href="#calendly">Jetzt Webapp beschleunigen</Link>
-            </Button>
-          </div>
+        <div>
+          <Button asChild variant="outline">
+            <Link href="#calendly">Jetzt Webapp beschleunigen</Link>
+          </Button>
         </div>
-      </section>
+      </AngledSection>
+
+      <ComputerPictureSection />
+      <AngledSection variant="grey" title="Unser Angebot für Sie">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {services.map((service) => (
+            <HomeUsp key={service.title} usp={service} color="text-black" />
+          ))}
+        </div>
+        <div>
+          <Button asChild>
+            <Link href="#calendly">Jetzt Webapp beschleunigen</Link>
+          </Button>
+        </div>
+      </AngledSection>
+
       <section className="w-full flex justify-center items-center">
         <div className="flex flex-col gap-8 text-center py-32 max-w-screen-sm px-8 items-center">
           <Image
