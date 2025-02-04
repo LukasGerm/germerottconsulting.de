@@ -127,7 +127,7 @@ export default function Leistungen() {
     <main className="flex flex-col items-center">
       <HeroSection>
         <Title variant="h1">
-          Unser Angebot <span className="text-primary">für Sie</span>
+          Unser Angebot <span className="text-primary">für Sie</span>.
         </Title>
       </HeroSection>
       <AngledSection
@@ -164,7 +164,7 @@ export default function Leistungen() {
           </div>
         </div>
       </section>
-      <CalendlyWidget />
+      <CalendlyWidget variant="grey" />
     </main>
   );
 }

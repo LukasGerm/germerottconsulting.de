@@ -144,7 +144,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <CalendlyWidget />
+      <CalendlyWidget variant="grey" />
     </main>
   );
 }

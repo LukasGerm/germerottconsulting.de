@@ -1,13 +1,15 @@
 import { cn } from "@/lib/utils";
 import styles from "./calendly-widget.module.css";
 import Script from "next/script";
-export const CalendlyWidget = () => {
+export const CalendlyWidget = (props: { variant: "grey" | "white" }) => {
+  const { variant } = props;
   return (
     <section
       className={cn(
         cn(
           styles["angled-section"],
-          "flex justify-center items-center w-full bg-card flex-col"
+          "flex justify-center items-center w-full flex-col",
+          variant === "grey" ? "bg-card" : "bg-white"
         )
       )}
       id="calendly"

@@ -15,8 +15,8 @@ export const headerPaths: Path = {
     label: "Leistungen",
   },
   about: {
-    path: "/ueber-mich",
-    label: "Über Mich",
+    path: "/ueber-uns",
+    label: "Über Uns",
   },
 };
 
