@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     title: "Impressum | Germerott Performance Consulting",
     description:
       "Rechtliche Angaben, Kontakt und weitere Informationen zu Germerott Performance Consulting.",
-    url: "https://www.germerottconsulting.de/impressum",
+    url: "https://germerottconsulting.de/impressum",
     images: [
       {
-        url: "https://www.germerottconsulting.de/og?title=Impressum",
+        url: "https://germerottconsulting.de/og?title=Impressum",
         width: 1200,
         height: 630,
         alt: "Germerott Performance Consulting - Impressum",

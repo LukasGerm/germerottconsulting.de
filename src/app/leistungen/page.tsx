@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     title: "Leistungen | Germerott Performance Consulting",
     description:
       "Unser Portfolio rund um Web-Performance: Audit, Umsetzung, Monitoring und Schulungen für effiziente und schnelle Websites.",
-    url: "https://www.germerottconsulting.de/leistungen",
+    url: "https://germerottconsulting.de/leistungen",
     images: [
       {
-        url: "https://www.germerottconsulting.de/og?title=Leistungen",
+        url: "https://germerottconsulting.de/og?title=Leistungen",
         width: 1200,
         height: 630,
         alt: "Germerott Performance Consulting - Leistungen",

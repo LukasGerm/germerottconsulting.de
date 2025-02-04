@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     title: "Startseite | Germerott Performance Consulting",
     description:
       "Schnellere Websites, zufriedene Nutzer: Entdecken Sie unsere Performance-Optimierungen und nachhaltigen Lösungen für einen reibungslosen Online-Auftritt.",
-    url: "https://www.germerottconsulting.de/",
+    url: "https://germerottconsulting.de/",
     images: [
       {
-        url: "https://www.germerottconsulting.de/og?title=Startseite",
+        url: "https://germerottconsulting.de/og?title=Startseite",
         width: 1200,
         height: 630,
         alt: "Germerott Performance Consulting - Startseite",

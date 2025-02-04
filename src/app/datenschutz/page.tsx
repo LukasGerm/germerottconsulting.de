@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     title: "Datenschutz | Germerott Performance Consulting",
     description:
       "Informationen zum Umgang mit personenbezogenen Daten und den geltenden Datenschutzrichtlinien bei Germerott Performance Consulting.",
-    url: "https://www.germerottconsulting.de/datenschutz",
+    url: "https://germerottconsulting.de/datenschutz",
     images: [
       {
-        url: "https://www.germerottconsulting.de/og?title=Datenschutz",
+        url: "https://germerottconsulting.de/og?title=Datenschutz",
         width: 1200,
         height: 630,
         alt: "Germerott Performance Consulting - Datenschutz",
@@ -289,11 +289,11 @@ const PrivacyPolicy: NextPage = () => {
           Einstellungsmöglichkeiten zum Schutz Ihrer Privatsphäre entnehmen Sie
           bitte den Datenschutzhinweisen von WhatsApp:{" "}
           <a
-            href="https://www.whatsapp.com/legal/?eea=1#privacy-policy"
+            href="https://whatsapp.com/legal/?eea=1#privacy-policy"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://www.whatsapp.com/legal/?eea=1#privacy-policy
+            https://whatsapp.com/legal/?eea=1#privacy-policy
           </a>
         </p>
 

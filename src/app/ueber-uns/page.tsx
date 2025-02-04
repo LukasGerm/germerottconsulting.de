@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     title: "Über Uns | Germerott Performance Consulting",
     description:
       "Lernen Sie unser Team kennen und entdecken Sie, warum wir für nachhaltige Performance-Optimierung brennen.",
-    url: "https://www.germerottconsulting.de/ueber-uns",
+    url: "https://germerottconsulting.de/ueber-uns",
     images: [
       {
-        url: "https://www.germerottconsulting.de/og?title=About",
+        url: "https://germerottconsulting.de/og?title=About",
         width: 1200,
         height: 630,
         alt: "Germerott Performance Consulting - Über Uns",
