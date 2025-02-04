@@ -1,7 +1,30 @@
 import { HeroSection } from "@/components/ui/sections/hero-section";
 import { Title } from "@/components/ui/title";
-import type { NextPage } from "next";
+import type { Metadata, NextPage } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Datenschutz | Germerott Performance Consulting",
+  description:
+    "Erfahren Sie, wie wir mit Ihren persönlichen Daten umgehen. Wir legen höchsten Wert auf Datenschutz und transparente Datenverarbeitung.",
+  openGraph: {
+    title: "Datenschutz | Germerott Performance Consulting",
+    description:
+      "Informationen zum Umgang mit personenbezogenen Daten und den geltenden Datenschutzrichtlinien bei Germerott Performance Consulting.",
+    url: "https://www.germerottconsulting.de/datenschutz",
+    images: [
+      {
+        url: "https://www.germerottconsulting.de/og?title=Datenschutz",
+        width: 1200,
+        height: 630,
+        alt: "Germerott Performance Consulting - Datenschutz",
+      },
+    ],
+    siteName: "Germerott Performance Consulting",
+    locale: "de_DE",
+    type: "article",
+  },
+};
 
 const PrivacyPolicy: NextPage = () => {
   return (

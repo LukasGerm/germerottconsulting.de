@@ -4,6 +4,30 @@ import { Title } from "@/components/ui/title";
 import Image from "next/image";
 import Profile from "../assets/profile.jpeg";
 import { CalendlyWidget } from "@/components/logic/calendly-widget";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Über Uns | Germerott Performance Consulting",
+  description:
+    "Erfahren Sie mehr über unsere Leidenschaft für Frontend-Performance. Wir stellen uns vor und zeigen, wie wir Webseiten schneller und effizienter machen.",
+  openGraph: {
+    title: "Über Uns | Germerott Performance Consulting",
+    description:
+      "Lernen Sie unser Team kennen und entdecken Sie, warum wir für nachhaltige Performance-Optimierung brennen.",
+    url: "https://www.germerottconsulting.de/ueber-uns",
+    images: [
+      {
+        url: "https://www.germerottconsulting.de/og?title=About",
+        width: 1200,
+        height: 630,
+        alt: "Germerott Performance Consulting - Über Uns",
+      },
+    ],
+    siteName: "Germerott Performance Consulting",
+    locale: "de_DE",
+    type: "article",
+  },
+};
 
 export default function About() {
   return (

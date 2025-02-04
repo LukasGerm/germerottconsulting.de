@@ -12,6 +12,30 @@ import { HomeUsp, USP } from "@/components/ui/home-usp";
 import SearchIcon from "../assets/icons/search.svg";
 import TachometerIcon from "../assets/icons/tachometer-alt.svg";
 import ChartIcon from "../assets/icons/chart-line.svg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Leistungen | Germerott Performance Consulting",
+  description:
+    "Entdecken Sie unser Angebot: Performance-Audits, Optimierungen, Monitoring und Workshops. Wir steigern dauerhaft die Geschwindigkeit Ihrer Webanwendungen.",
+  openGraph: {
+    title: "Leistungen | Germerott Performance Consulting",
+    description:
+      "Unser Portfolio rund um Web-Performance: Audit, Umsetzung, Monitoring und Schulungen für effiziente und schnelle Websites.",
+    url: "https://www.germerottconsulting.de/leistungen",
+    images: [
+      {
+        url: "https://www.germerottconsulting.de/og?title=Leistungen",
+        width: 1200,
+        height: 630,
+        alt: "Germerott Performance Consulting - Leistungen",
+      },
+    ],
+    siteName: "Germerott Performance Consulting",
+    locale: "de_DE",
+    type: "article",
+  },
+};
 
 const usps: ServicesUsp[] = [
   {

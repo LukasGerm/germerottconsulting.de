@@ -17,7 +17,30 @@ import { HeroSection } from "@/components/ui/sections/hero-section";
 import { Title } from "@/components/ui/title";
 import { ComputerPictureSection } from "@/components/ui/sections/computer-picture-section";
 import { AngledSection } from "@/components/ui/sections/angled-section";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Startseite | Germerott Performance Consulting",
+  description:
+    "Steigern Sie Ihre Conversion und Nutzerzufriedenheit mit schnellem Frontend. Germerott Performance Consulting ist Ihr Spezialist für Web-Speed-Optimierung und nachhaltige Performance-Lösungen.",
+  openGraph: {
+    title: "Startseite | Germerott Performance Consulting",
+    description:
+      "Schnellere Websites, zufriedene Nutzer: Entdecken Sie unsere Performance-Optimierungen und nachhaltigen Lösungen für einen reibungslosen Online-Auftritt.",
+    url: "https://www.germerottconsulting.de/",
+    images: [
+      {
+        url: "https://www.germerottconsulting.de/og?title=Startseite",
+        width: 1200,
+        height: 630,
+        alt: "Germerott Performance Consulting - Startseite",
+      },
+    ],
+    siteName: "Germerott Performance Consulting",
+    locale: "de_DE",
+    type: "website",
+  },
+};
 const usps: USP[] = [
   {
     title: "Schnellere Ladezeiten",

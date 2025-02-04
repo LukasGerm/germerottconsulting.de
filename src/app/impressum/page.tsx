@@ -1,7 +1,30 @@
 import { HeroSection } from "@/components/ui/sections/hero-section";
 import { Title } from "@/components/ui/title";
-import type { NextPage } from "next";
+import type { Metadata, NextPage } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Impressum | Germerott Performance Consulting",
+  description:
+    "Angaben gemäß § 5 TMG über Germerott Performance Consulting. Kontaktinformationen und rechtliche Hinweise finden Sie hier.",
+  openGraph: {
+    title: "Impressum | Germerott Performance Consulting",
+    description:
+      "Rechtliche Angaben, Kontakt und weitere Informationen zu Germerott Performance Consulting.",
+    url: "https://www.germerottconsulting.de/impressum",
+    images: [
+      {
+        url: "https://www.germerottconsulting.de/og?title=Impressum",
+        width: 1200,
+        height: 630,
+        alt: "Germerott Performance Consulting - Impressum",
+      },
+    ],
+    siteName: "Germerott Performance Consulting",
+    locale: "de_DE",
+    type: "article",
+  },
+};
 
 const Impressum: NextPage = () => {
   return (
