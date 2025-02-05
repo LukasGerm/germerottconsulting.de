@@ -42,14 +42,15 @@ export default function About() {
         variant="gradient"
       >
         <p className="text-white">
-          Hallo, ich wir sind Germerott Performance Consulting, und ich haben
-          uns darauf spezialisiert, die Performance von Webapps, besonders React
-          basierte, zu optimieren. Mit jahrelanger Erfahrung in der
-          Softwareentwicklung helfen wir Unternehmen, ihre Webanwendungen
+          Hallo, ich wir sind <b>Germerott Performance Consulting</b>, und ich
+          haben uns darauf spezialisiert, die <b>Performance von Webapps</b>,
+          besonders React basierte, zu optimieren. Mit jahrelanger Erfahrung in
+          der Softwareentwicklung helfen wir Unternehmen, ihre Webanwendungen
           schneller, benutzerfreundlicher und erfolgreicher zu machen. Unser
-          Ziel ist es, Ihnen zu helfen, das volle Potenzial Ihrer Anwendung
-          auszuschöpfen, indem wir gezielt Ladezeiten reduziere, die
-          Nutzererfahrung verbessere und Ihre Conversion-Rate steigere.
+          Ziel ist es, Ihnen zu helfen, das <b>volle Potenzial</b> Ihrer
+          Anwendung auszuschöpfen, indem wir gezielt Ladezeiten reduziere, die
+          <b>Nutzererfahrung</b> verbessere und Ihre <b>Conversion-Rate</b>{" "}
+          steigere.
         </p>
       </AngledSection>
       <section className="w-full flex justify-center items-center">

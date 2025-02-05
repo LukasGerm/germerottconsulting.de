@@ -45,7 +45,7 @@ const usps: USP[] = [
   {
     title: "Schnellere Ladezeiten",
     description:
-      "Unsere Optimierungen reduzieren Ladezeiten drastisch. Das sorgt für eine bessere User Experience & zufriedene Besucher.",
+      "Unsere Optimierungen reduzieren Ladezeiten und verbessern die Interaktivität Ihrer Webapp. Das sorgt für eine bessere User Experience & zufriedene Besucher.",
     icon: RocketIcon,
   },
   {
@@ -57,7 +57,7 @@ const usps: USP[] = [
   {
     title: "Nachweisbarer Erfolg",
     description:
-      "Mit datenbasierten Analysen und Case Studies zeigen wir dir schwarz auf weiß, wie sich deine Performance verbessert.",
+      "Mit datenbasierten Analysen und Case Studies zeigen wir Ihnen schwarz auf weiß, wie sich Ihre Performance verbessert.",
     icon: ClipboardIcon,
   },
 ];
@@ -66,25 +66,25 @@ const services: USP[] = [
   {
     title: "Performance-Audit",
     description:
-      "Durch gezielte Optimierungen der Ladegeschwindigkeit wird die Performance deiner Website verbessert, was zu kürzeren Ladezeiten und einer insgesamt besseren Nutzererfahrung führt.",
+      "Durch ein gründliches Performance-Audit enthüllen wir Ladezeit-Bremsen und steigern SEO sowie Nutzererlebnis.",
     icon: ChartLineIcon,
   },
   {
     title: "Performance-Optimierung & Umsetzung",
     description:
-      "Durch gezielte Optimierungen der Ladegeschwindigkeit wird die Performance deiner Website verbessert, was zu kürzeren Ladezeiten und einer insgesamt besseren Nutzererfahrung führt.",
+      "Durch gezielte Performance-Optimierung und Umsetzung reduzieren wir Ladezeiten, stärken SEO und erhöhen die Conversion-Rate.",
     icon: CogsIgon,
   },
   {
     title: "Monitoring & kontinuierliche Betreuung",
     description:
-      "Durch gezielte Optimierungen der Ladegeschwindigkeit wird die Performance deiner Website verbessert, was zu kürzeren Ladezeiten und einer insgesamt besseren Nutzererfahrung führt.",
+      "Regelmäßiges Monitoring sichert stabile Ladezeiten, erkennt Engpässe früh und sorgt für durchgehend optimale Performance.",
     icon: ChartPieIcon,
   },
   {
     title: "Workshops & Schulungen",
     description:
-      "Durch gezielte Optimierungen der Ladegeschwindigkeit wird die Performance deiner Website verbessert, was zu kürzeren Ladezeiten und einer insgesamt besseren Nutzererfahrung führt.",
+      "In praxisnahen Workshops und Schulungen vermitteln wir das Know-how für nachhaltige Performance und erfolgreiches Web-Optimieren.",
     icon: ChalkboardTeacherIcon,
   },
 ];
@@ -100,8 +100,8 @@ export default function Home() {
         <p>
           Wir optimieren Ihre Frontend-Performance, reduziere Ladezeiten und
           sorge für eine reibungslose Nutzererfahrung. Durch gezielte
-          Optimierungen steigeren wir Ihre Conversion Rate und macheb Ihre
-          Website schneller, effizienter und erfolgreicher.
+          Optimierungen steigeren wir Ihre Conversion Rate und machen Ihre
+          Webapp schneller, effizienter und erfolgreicher.
         </p>
         <div>
           <Button asChild>

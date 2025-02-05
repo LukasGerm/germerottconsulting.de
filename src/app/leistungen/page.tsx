@@ -159,12 +159,13 @@ export default function Leistungen() {
         title="Performance-Optimierung für Ihre Website"
       >
         <p className="text-white">
-          Eine schnelle Website ist entscheidend für Ihren Erfolg! Optimierte
-          Ladezeiten verbessern nicht nur die Nutzererfahrung, sondern steigern
-          auch Ihre Conversion Rate, stärken die Kundenbindung und sorgen für
-          ein besseres SEO-Ranking. Mit gezielten Performance-Optimierungen
-          mache ich Ihre Webanwendung schneller, effizienter und erfolgreicher.
-          Lassen Sie Ihre Website nicht ausbremsen – jetzt optimieren
+          Eine schnelle Website ist entscheidend für Ihren Erfolg!{" "}
+          <b>Optimierte Ladezeiten</b> verbessern nicht nur die Nutzererfahrung,
+          sondern steigern auch Ihre <b>Conversion Rate</b>, stärken die
+          Kundenbindung und sorgen für ein besseres <b>SEO-Ranking</b>. Mit
+          gezielten Performance-Optimierungen mache ich Ihre Webanwendung
+          schneller, effizienter und erfolgreicher. Lassen Sie Ihre Website
+          nicht ausbremsen – <b>jetzt optimieren</b>
         </p>
       </AngledSection>
       <ComputerPictureSection />
