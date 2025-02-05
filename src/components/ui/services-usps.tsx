@@ -27,7 +27,7 @@ const ServicesUsp = (
           alt="title"
           width={400}
           height={300}
-          className="rounded-lg flex-1 object-cover"
+          className="rounded-lg flex-1 object-cover hidden md:block w-1/2"
         />
         <div className="text-left flex-1 flex flex-col gap-2">
           <Title variant="h3">{title}</Title>
