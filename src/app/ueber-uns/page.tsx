@@ -12,21 +12,21 @@ export const metadata: Metadata = {
   description:
     "Erfahren Sie mehr über unsere Leidenschaft für Frontend-Performance. Wir stellen uns vor und zeigen, wie wir Webseiten schneller und effizienter machen.",
   openGraph: {
-    title: "Über Uns | Germerott Performance Consulting",
+    title: "Über uns | Germerott Performance Consulting",
     description:
-      "Lernen Sie unser Team kennen und entdecken Sie, warum wir für nachhaltige Performance-Optimierung brennen.",
-    url: "https://germerottconsulting.de/ueber-uns",
+      "Lernen Sie den Performance-Experten hinter Germerott Consulting kennen: langjährige Erfahrung, moderne Tools und Passion für blitzschnelle Web-Anwendungen.",
+    url: "https://germerottconsulting.de/ueber-mich",
     images: [
       {
         url: "https://germerottconsulting.de/og?title=About",
         width: 1920,
         height: 1080,
-        alt: "Germerott Performance Consulting - Über Uns",
+        alt: "Germerott Performance Consulting - Über mich",
       },
     ],
     siteName: "Germerott Performance Consulting",
     locale: "de_DE",
-    type: "article",
+    type: "website",
   },
 };
 

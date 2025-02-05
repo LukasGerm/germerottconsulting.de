@@ -23,11 +23,11 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Startseite | Germerott Performance Consulting",
   description:
-    "Steigern Sie Ihre Conversion und Nutzerzufriedenheit mit schnellem Frontend. Germerott Performance Consulting ist Ihr Spezialist für Web-Speed-Optimierung und nachhaltige Performance-Lösungen.",
+    "Beschleunigen Sie Ihre Web-App und steigern Sie die Nutzerzufriedenheit. Germerott Performance Consulting ist Ihr Experte für nachhaltige Performance-Optimierung im Frontend.",
   openGraph: {
     title: "Startseite | Germerott Performance Consulting",
     description:
-      "Schnellere Websites, zufriedene Nutzer: Entdecken Sie unsere Performance-Optimierungen und nachhaltigen Lösungen für einen reibungslosen Online-Auftritt.",
+      "Maximale Geschwindigkeit für moderne Web-Anwendungen: Entdecken Sie unsere Performance-Strategien für reaktive Frontends und zufriedene User.",
     url: "https://germerottconsulting.de/",
     images: [
       {
@@ -42,6 +42,7 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
 const usps: USP[] = [
   {
     title: "Schnellere Ladezeiten",

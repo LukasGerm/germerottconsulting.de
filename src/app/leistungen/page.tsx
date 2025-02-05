@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Leistungen | Germerott Performance Consulting",
     description:
-      "Unser Portfolio rund um Web-Performance: Audit, Umsetzung, Monitoring und Schulungen für effiziente und schnelle Websites.",
+      "Schnelle Single-Page-Apps, solide Architektur und optimale Nutzererfahrung: Entdecken Sie unser Portfolio rund um Performance-Audits, Optimierungen und Workshops.",
     url: "https://germerottconsulting.de/leistungen",
     images: [
       {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     ],
     siteName: "Germerott Performance Consulting",
     locale: "de_DE",
-    type: "article",
+    type: "website",
   },
 };
 
