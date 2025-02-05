@@ -26,7 +26,7 @@ export async function GET(request: Request) {
           width: "100%",
           height: "100%",
           padding: "8rem",
-          background: "#151515",
+          background: "#1e3a5f",
         }}
       >
         <div
@@ -61,7 +61,7 @@ export async function GET(request: Request) {
             }}
           >
             <img
-              src={"https://germerottconsulting.de/profile.jpeg"}
+              src={"https://germerottconsulting.de/logo_white.png"}
               alt="Germerott Consulting"
               height={256}
               width={256}
