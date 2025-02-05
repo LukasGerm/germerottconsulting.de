@@ -30,7 +30,9 @@ export const AngledSection = (
           <hr
             className={cn(
               "w-24 h-2  mx-auto mt-4 mb-4 border-t-2",
-              variant === "gradient" ? "bg-primary" : "bg-card border-primary"
+              variant === "gradient"
+                ? "bg-transparent"
+                : "bg-card border-primary"
             )}
           />
         </div>

@@ -18,6 +18,7 @@ import { Title } from "@/components/ui/title";
 import { ComputerPictureSection } from "@/components/ui/sections/computer-picture-section";
 import { AngledSection } from "@/components/ui/sections/angled-section";
 import { Metadata } from "next";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Startseite | Germerott Performance Consulting",
@@ -151,7 +152,13 @@ export default function Home() {
           />
           <div>
             <Title variant="h2">Hey, ich bin Lukas</Title>
-            <hr className="w-24 h-2 bg-primary mx-auto mt-4 mb-4 border-t-2" />
+            <hr
+              className={cn(
+                "w-24 h-2  mx-auto mt-4 mb-4 border-t-2",
+
+                "border-primary"
+              )}
+            />
           </div>
           <p>
             Ich bin Lukas Germerott, ein leidenschaftlicher Frontend Performance

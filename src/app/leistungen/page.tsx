@@ -13,6 +13,7 @@ import SearchIcon from "../assets/icons/search.svg";
 import TachometerIcon from "../assets/icons/tachometer-alt.svg";
 import ChartIcon from "../assets/icons/chart-line.svg";
 import { Metadata } from "next";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Leistungen | Germerott Performance Consulting",
@@ -176,7 +177,13 @@ export default function Leistungen() {
         <div className="flex flex-col gap-8 text-center py-32 max-w-screen-lg px-8 items-center">
           <div>
             <Title variant="h2">Ihre Vorteile</Title>
-            <hr className="w-24 h-2 bg-primary mx-auto mt-4 mb-4 border-t-2" />
+            <hr
+              className={cn(
+                "w-24 h-2  mx-auto mt-4 mb-4 border-t-2",
+
+                "border-primary"
+              )}
+            />{" "}
           </div>
           <div className="flex flex-col md:flex-row gap-8">
             {advantages.map((advantage) => (

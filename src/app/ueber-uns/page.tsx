@@ -5,6 +5,7 @@ import Image from "next/image";
 import Profile from "../assets/profile.jpeg";
 import { CalendlyWidget } from "@/components/logic/calendly-widget";
 import { Metadata } from "next";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Über Uns | Germerott Performance Consulting",
@@ -67,7 +68,13 @@ export default function About() {
               “Langsame Webanwendungen führen schnell zu Frustration, deshalb
               ist es wichtig, diese zu optimieren.”
             </Title>
-            <hr className="w-24 h-2 bg-primary mx-auto mt-4 mb-4 border-t-2" />
+            <hr
+              className={cn(
+                "w-24 h-2  mx-auto mt-4 mb-4 border-t-2",
+
+                "border-primary"
+              )}
+            />{" "}
           </div>
           <p>Lukas Germerott – Germerott Performance Consulting</p>
         </div>
