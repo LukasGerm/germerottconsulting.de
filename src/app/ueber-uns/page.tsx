@@ -81,7 +81,7 @@ export default function About() {
       </section>
       <AngledSection
         variant="grey"
-        title="Warum Performance für mich der Schlüssel zum Erfolg istWarum Performance für mich der Schlüssel zum Erfolg ist"
+        title="Warum Performance für uns der Schlüssel zum Erfolg ist"
       >
         <p>
           Performance ist für mich nicht nur ein technisches Detail – sie ist
