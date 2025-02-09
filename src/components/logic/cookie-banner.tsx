@@ -7,6 +7,7 @@ import {
   useSetConsent,
 } from "./providers/consent-provider";
 import Link from "next/link";
+import {paths} from "@/utils/paths";
 
 export const CookieBanner = () => {
   const setConsent = useSetConsent();
@@ -29,7 +30,7 @@ export const CookieBanner = () => {
       cookieName={CONSENT_COOKIE_NAME}
     >
       Diese Website verwendet Cookies, um Ihnen ein besseres Erlebnis zu bieten.{" "}
-      <Link className="font-bold" href={"/privacy-policy"}>
+      <Link className="font-bold" href={paths.privacy.path}>
         Datenschutzerklärung
       </Link>
     </CookieConsent>
