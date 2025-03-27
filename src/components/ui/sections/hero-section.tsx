@@ -5,7 +5,7 @@ export const HeroSection = (props: React.PropsWithChildren) => {
   return (
     <section
       className={cn(
-        "flex justify-center items-center w-full z-0 pointer-events-none",
+        "flex justify-center items-center w-full z-0",
         styles["entry-section"]
       )}
     >
