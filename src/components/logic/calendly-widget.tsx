@@ -5,14 +5,19 @@ import styles from "./calendly-widget.module.css";
 
 import { InlineWidget, useCalendlyEventListener } from "react-calendly";
 import { useConsentGiven } from "./providers/consent-provider";
+import { useRouter } from "next/router";
 
 export const CalendlyWidget = (props: { variant: "grey" | "white" }) => {
   const { variant } = props;
 
   const consentGiven = useConsentGiven();
 
+  const router = useRouter();
+
   useCalendlyEventListener({
-    onEventScheduled: (e) => console.log(e.data.payload),
+    onEventScheduled: () => {
+      router.push("/success");
+    },
   });
 
   return (
