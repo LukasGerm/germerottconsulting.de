@@ -7,13 +7,13 @@ export async function GET(request: Request) {
   const title =
     url.searchParams.get("title") || "Germerott Performance Consulting";
   const font = fetch(
-    new URL("../../../public/fonts/Poppins-Regular.ttf", import.meta.url)
+    new URL("../../../public/fonts/Poppins-Regular.ttf", import.meta.url),
   ).then((res) => res.arrayBuffer());
   const playfairDisplay = fetch(
     new URL(
       "../../../public/fonts/PlayfairDisplay-Regular.ttf",
-      import.meta.url
-    )
+      import.meta.url,
+    ),
   ).then((res) => res.arrayBuffer());
   const fontData = await font;
   const playfairDisplayData = await playfairDisplay;
@@ -107,6 +107,6 @@ export async function GET(request: Request) {
           style: "normal",
         },
       ],
-    }
+    },
   );
 }

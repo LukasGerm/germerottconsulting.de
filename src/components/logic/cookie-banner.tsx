@@ -7,7 +7,7 @@ import {
   useSetConsent,
 } from "./providers/consent-provider";
 import Link from "next/link";
-import {paths} from "@/utils/paths";
+import { paths } from "@/utils/paths";
 
 export const CookieBanner = () => {
   const setConsent = useSetConsent();

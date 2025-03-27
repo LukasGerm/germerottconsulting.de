@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import styles from "./calendly-widget.module.css";
 
-import { InlineWidget } from "react-calendly";
+import { InlineWidget, useCalendlyEventListener } from "react-calendly";
 import { useConsentGiven } from "./providers/consent-provider";
 
 export const CalendlyWidget = (props: { variant: "grey" | "white" }) => {
@@ -11,14 +11,18 @@ export const CalendlyWidget = (props: { variant: "grey" | "white" }) => {
 
   const consentGiven = useConsentGiven();
 
+  useCalendlyEventListener({
+    onEventScheduled: (e) => console.log(e.data.payload),
+  });
+
   return (
     <section
       className={cn(
         cn(
           styles["angled-section"],
           "flex justify-center items-center w-full flex-col",
-          variant === "grey" ? "bg-card" : "bg-white"
-        )
+          variant === "grey" ? "bg-card" : "bg-white",
+        ),
       )}
       id="calendly"
     >

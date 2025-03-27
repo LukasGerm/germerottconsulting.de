@@ -16,7 +16,7 @@ interface ServicesUspProps {
 }
 
 const ServicesUsp = (
-  props: ServicesUsp & { reverse: boolean; showVerticalDevider: boolean }
+  props: ServicesUsp & { reverse: boolean; showVerticalDevider: boolean },
 ) => {
   const { title, body, cta, image, reverse, showVerticalDevider } = props;
   return (

@@ -6,7 +6,7 @@ export const HeroSection = (props: React.PropsWithChildren) => {
     <section
       className={cn(
         "flex justify-center items-center w-full z-0",
-        styles["entry-section"]
+        styles["entry-section"],
       )}
     >
       <div className="flex flex-col gap-8 text-center py-56 max-w-screen-lg px-8 z-10">

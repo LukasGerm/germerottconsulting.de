@@ -8,7 +8,7 @@ interface AngledSectionProps {
 }
 
 export const AngledSection = (
-  props: React.PropsWithChildren<AngledSectionProps>
+  props: React.PropsWithChildren<AngledSectionProps>,
 ) => {
   const { title, children, variant } = props;
   return (
@@ -16,7 +16,7 @@ export const AngledSection = (
       className={cn(
         styles["angled-section"],
         "flex justify-center items-center w-full",
-        variant === "gradient" ? styles["linear-gradient"] : "bg-card"
+        variant === "gradient" ? styles["linear-gradient"] : "bg-card",
       )}
     >
       <div className="flex flex-col gap-8 text-center py-32 max-w-screen-lg px-8">
@@ -32,7 +32,7 @@ export const AngledSection = (
               "w-24 h-2  mx-auto mt-4 mb-4 border-t-2",
               variant === "gradient"
                 ? "bg-transparent"
-                : "bg-card border-primary"
+                : "bg-card border-primary",
             )}
           />
         </div>

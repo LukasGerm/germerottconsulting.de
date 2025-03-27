@@ -181,7 +181,7 @@ export default function Leistungen() {
               className={cn(
                 "w-24 h-2  mx-auto mt-4 mb-4 border-t-2",
 
-                "border-primary"
+                "border-primary",
               )}
             />{" "}
           </div>

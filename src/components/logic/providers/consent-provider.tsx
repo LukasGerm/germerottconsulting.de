@@ -9,7 +9,7 @@ interface ConsentContextType {
 }
 
 const ConsentContext = createContext<ConsentContextType>(
-  {} as ConsentContextType
+  {} as ConsentContextType,
 );
 
 export const CONSENT_COOKIE_NAME = "consent_given";

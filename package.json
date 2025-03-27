@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "prettier:write": "prettier --write ."
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -18,7 +19,7 @@
     "clsx": "^2.1.1",
     "js-cookie": "^3.0.5",
     "lucide-react": "^0.474.0",
-    "next": "15.1.6",
+    "next": "^15.2.4",
     "next-sitemap": "^4.2.3",
     "react": "^19.0.0",
     "react-calendly": "^4.3.1",
@@ -37,6 +38,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "postcss": "^8",
+    "prettier": "^3.5.3",
     "tailwindcss": "^3.4.1",
     "typescript": "^5",
     "wrangler": "^3.106.0"
