@@ -5,7 +5,7 @@ import styles from "./calendly-widget.module.css";
 
 import { InlineWidget, useCalendlyEventListener } from "react-calendly";
 import { useConsentGiven } from "./providers/consent-provider";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export const CalendlyWidget = (props: { variant: "grey" | "white" }) => {
   const { variant } = props;
