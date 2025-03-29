@@ -53,7 +53,7 @@ const usps: USP[] = [
   {
     title: "Mehr Nutzerzufriedenheit",
     description:
-      "Schnelles Surfen, weniger Frust. Deine User bleiben länger und kommen gerne wieder.",
+      "Schnelles Surfen, weniger Frust. Ihre User bleiben länger und kommen gerne wieder.",
     icon: SmileIcon,
   },
   {

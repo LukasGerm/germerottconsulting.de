@@ -43,8 +43,8 @@ export default function About() {
         variant="gradient"
       >
         <p className="text-white">
-          Hallo, ich wir sind <b>Germerott Performance Consulting</b>, und ich
-          haben uns darauf spezialisiert, die <b>Performance von Webapps</b>,
+          Hallo, wir sind <b>Germerott Performance Consulting</b>, und wir haben
+          uns darauf spezialisiert, die <b>Performance von Webapps</b>,
           besonders React basierte, zu optimieren. Mit jahrelanger Erfahrung in
           der Softwareentwicklung helfen wir Unternehmen, ihre Webanwendungen
           schneller, benutzerfreundlicher und erfolgreicher zu machen. Unser
