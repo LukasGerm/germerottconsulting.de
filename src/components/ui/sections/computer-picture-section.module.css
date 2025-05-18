@@ -1,6 +1,0 @@
-.computer-picture {
-    background: url("../assets/picture2-min.jpg") center/cover no-repeat;
-    height: 50vh;
-    width: 100%;
-    filter: grayscale(100%);
-}

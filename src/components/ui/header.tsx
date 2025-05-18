@@ -15,6 +15,7 @@ export const Header = () => {
             width={200}
             src={LogoBlue}
             alt="Germerott Consulting Logo"
+            priority
           />
         </Link>
 

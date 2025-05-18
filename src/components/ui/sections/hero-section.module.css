@@ -1,5 +1,5 @@
 .entry-section {
-    background: url("../assets/picture1-min.jpg") center/cover no-repeat;
-    background-color: rgba(255, 255, 255, 0.9);
-    background-blend-mode: lighten;
+  /* background: url("../assets/picture1-min.jpg") center/cover no-repeat; */
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
 }
