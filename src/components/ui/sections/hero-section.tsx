@@ -15,7 +15,7 @@ export const HeroSection = (props: React.PropsWithChildren) => {
         alt="Decorative background image"
         layout="fill"
         objectFit="cover"
-        quality={100}
+        quality={1}
         className="z-[-2]"
         priority
       />
