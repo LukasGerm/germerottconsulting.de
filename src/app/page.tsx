@@ -12,13 +12,20 @@ import Profile from "./assets/profile.jpeg";
 import { HomeUsp, USP } from "@/components/ui/home-usp";
 import { paths } from "@/utils/paths";
 import Image from "next/image";
-import { CalendlyWidget } from "@/components/logic/calendly-widget";
 import { HeroSection } from "@/components/ui/sections/hero-section";
 import { Title } from "@/components/ui/title";
 import { ComputerPictureSection } from "@/components/ui/sections/computer-picture-section";
 import { AngledSection } from "@/components/ui/sections/angled-section";
 import { Metadata } from "next";
 import { cn } from "@/lib/utils";
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
+
+const CalendlyWidget = dynamic(() =>
+  import("@/components/logic/calendly-widget").then((module) => ({
+    default: module.CalendlyWidget,
+  })),
+);
 
 export const metadata: Metadata = {
   title: "Startseite | Germerott Performance Consulting",
@@ -178,7 +185,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <CalendlyWidget variant="grey" />
+      <Suspense fallback={<div className="w-full h-[1000px] bg-card" />}>
+        <CalendlyWidget variant="grey" />
+      </Suspense>
     </main>
   );
 }

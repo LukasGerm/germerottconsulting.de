@@ -3,9 +3,16 @@ import { HeroSection } from "@/components/ui/sections/hero-section";
 import { Title } from "@/components/ui/title";
 import Image from "next/image";
 import Profile from "../assets/profile.jpeg";
-import { CalendlyWidget } from "@/components/logic/calendly-widget";
 import { Metadata } from "next";
 import { cn } from "@/lib/utils";
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
+
+const CalendlyWidget = dynamic(() =>
+  import("@/components/logic/calendly-widget").then((module) => ({
+    default: module.CalendlyWidget,
+  })),
+);
 
 export const metadata: Metadata = {
   title: "Über Uns | Germerott Performance Consulting",
@@ -100,7 +107,9 @@ export default function About() {
           effizient zu machen.
         </p>
       </AngledSection>
-      <CalendlyWidget variant="white" />
+      <Suspense fallback={<div className="w-full h-[1000px] bg-card" />}>
+        <CalendlyWidget variant="grey" />
+      </Suspense>
     </main>
   );
 }

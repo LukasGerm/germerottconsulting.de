@@ -7,14 +7,20 @@ import AuditPicture from "./assets/audit.jpg";
 import MonitoringPicture from "./assets/monitoring.jpeg";
 import PerformancePicture from "./assets/performance.jpeg";
 import SchulungPicture from "./assets/schulung.jpeg";
-import { CalendlyWidget } from "@/components/logic/calendly-widget";
 import { HomeUsp, USP } from "@/components/ui/home-usp";
 import SearchIcon from "../assets/icons/search.svg";
 import TachometerIcon from "../assets/icons/tachometer-alt.svg";
 import ChartIcon from "../assets/icons/chart-line.svg";
 import { Metadata } from "next";
 import { cn } from "@/lib/utils";
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
 
+const CalendlyWidget = dynamic(() =>
+  import("@/components/logic/calendly-widget").then((module) => ({
+    default: module.CalendlyWidget,
+  })),
+);
 export const metadata: Metadata = {
   title: "Leistungen | Germerott Performance Consulting",
   description:
@@ -196,7 +202,9 @@ export default function Leistungen() {
           </div>
         </div>
       </section>
-      <CalendlyWidget variant="grey" />
+      <Suspense fallback={<div className="w-full h-[1000px] bg-card" />}>
+        <CalendlyWidget variant="grey" />
+      </Suspense>
     </main>
   );
 }
