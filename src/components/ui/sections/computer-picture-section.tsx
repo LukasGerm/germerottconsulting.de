@@ -10,7 +10,7 @@ export const ComputerPictureSection = () => {
         alt="Decorative background image"
         layout="fill"
         objectFit="cover"
-        quality={1}
+        quality={50}
         className="grayscale" // Apply grayscale filter
       />
     </section>
